@@ -18,3 +18,5 @@ The differents correlation matrix shows that:
 -the nursery_seagrass and _mangroves are possitively linked with the coral_cover but not really with the reef_complexity. The reef_complexity is in negative relation with the connectivity. **This suggest that, all of these features are in relation and has a role in determining the diversity index.**
 
 - when we plot the data together in function of the region we can observed weird pattern for the data repartition. Perhaps, in those scatter-plot the invert relation between coral, reef and the diversity index is highligthing. 
+
+The observation above need to be search on the literature to be stronguer in arguments.
