@@ -21,10 +21,34 @@ The differents correlation matrix shows that:
 
 The observation above need to be search on the literature to be stronguer in arguments.
 
-After this analyse we clearly face to a regression problem because the diversity index is continuous and not discrete. 
-The models we can used are:
+After this analyse we face to a regression problem because the diversity index is continuous and not discrete. **Moreover the diversity index seems to don't be highly dispersed** and more concentrate around the range of 0.8 to 0.9.  Maybe a regression can have problem to perform well because of that and regroup the data in 3 classes could enhence the diversity prediction. In that case the diversity index itself become a predictive feature.
+
+After testing to group the diversity data into 3 classes:
+- 1 == the low diversity index below 0.8 (22% of the data)
+- 2 == the middle diversity index from 0.8 to 0.9 (50% of the data)
+- 3 == the high diversity index above 0.9 (25% of the data)
+After doing this I observed that:
+The correlation matrix with the diversity class and the feature related to the water environment shows the same trend of correlation between diversity index and class. This suggest grouping the diversity index didn't make lose of information.
+Mapping the diversity_class in function of the region in the study highligth better the repartition of the diversity index. 
+Maybe create diversity class could help to predict the diversity index where it allow to better see his repartition in the data. 
+Perhaps in doing this we get an imbalanced problem in the data...
+
+
+The models we can used for regression are:
 - **linear regression** because the different features seems to don't be highly related between each other (the coefficient correlation never exceed 0.2) allowing to using this model for a first look. Maybe we can set the parameter non-negative at TRUE because the diversity index is exclusively positive.The Ridge model family of linear regression like RidgeCV could be use. This model impose a penalty on the size of the coefficients. This is done by the alpha parameter which control the shrinkage and thus the coefficient become more robust to collinearity. In this model we will have to test the differents solver and which one suit better with our data. This model had in advantage to do a cross validation increasing the accuracy of the model. In that paper Khan et al, PlosOne, 2023 (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10513304/) the authors used 6 differents regression model (more complicated like XGBoost) and they describe how they choose their parameter for each. 
 - **A model like SVM** could be useful to solve our problem. This function like a linera regression but in addition it put segregate the value againts an hyperplane. It offer different type of kernel/method allowing to reduce the data overfitting.
 - **model Multivariate adaptative regression splines (MARS)** which used non-parametric and non-linear method of regression that uses piecewise basis functions (splines) to explain the relationship between predictor and response variables. The advantage of this model it is to automatically models interaction btw variables and inbuilt feature selection techniques (pruning and forward/backmard pass) exclude variables that don't add to the model's explanatory power. An article from Mondal and Bhat, 2021, ecological indicators (https://www.sciencedirect.com/science/article/pii/S1470160X21005872#s0010) use it to predict the fish diversity index with their variable. The author class at the 2nd rank for the efficiency and performance to predict their index. The python library is pyearth : https://contrib.scikit-learn.org/py-earth/content.html#multivariate-adaptive-regression-splines. 
+- Other? 
 
+**To evaluate the model** we will need to use the metric like:
+ - Rsquared
+ - MSE/RMSE/MAE
+ - cross validation 
 
+ For classification we could used:
+ - logistic regression
+ - random forest (could help with imbalanced data)
+ - SVM 
+ - Other? 
+
+Because in python it doesn't exist a function to put all the metrics in the same table we can think to create a function to put every metric of the models we compared at the same place like here : https://thecleverprogrammer.com/2024/02/19/compare-multiple-machine-learning-models/
