@@ -9,7 +9,7 @@ library(Boruta)
 data = read.csv("C:/Users/marie/Documents/DSTI_Cours/Python_Class/Python_Lab/Exam_project/Project 2/CoralReefFishSpeciesAssessment/df_ML.csv")
 
 #2nd dataset
-data = read.csv("C:/Users/marie/Documents/DSTI_Cours/Python_Class/Python_Lab/Exam_project/Project 2/CoralReefFishSpeciesAssessment/species_ML_2.csv")
+data = read.csv("C:/Users/marie/Documents/DSTI_Cours/Python_Class/Python_Lab/Exam_project/Project 2/CoralReefFishSpeciesAssessment/species_index_borruta.csv")
 
 #adding the cat column
 data$Diversity_cat = ifelse(
@@ -21,7 +21,7 @@ data$Diversity_cat = ifelse(
 
 data_borruta <- transform(data,
                           Region=as.factor(Region),
-                          habitat=as.factor(Diversity_cat))
+                          Habitat_type_classLV2=as.factor(Habitat_type_classLV2))
 
 borruta_output <- Boruta(Diversity_cat~., data= data_borruta, doTrace=2)
 
