@@ -12,4 +12,4 @@ I obtained a large dataset with more than 13,000 rows. After dropping some colum
 
 - About SMOGN: It was too time-consuming given the dataset's size, and i also didn't see the need to use GridSearch here.
 
--For the feature importances Plot : The plot from the plotly library is not loading on github ![Screenshot-Feature-importances](https://github.com/user-attachments/assets/4ea83902-bc85-40ee-b0bd-f9149db9caf7)
+-For the feature importances Plot : The plot from the plotly library is not loading on github ,so here is a screenshot of what it should output ![Screenshot-Feature-importances](https://github.com/user-attachments/assets/4ea83902-bc85-40ee-b0bd-f9149db9caf7)
