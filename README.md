@@ -20,7 +20,7 @@ This folder contains Jupyter notebooks that outline the machine learning model-b
 This folder contains image files that display the results of the machine learning predictions.
 
 ## Getting Started
-To start exploring the project, you can begin by opening the notebooks in the [02 - Exploratory Data Analysis](./02%20-%20Exploratory%20Data%20Analysis/) folder for an initial overview of the data and the findings from the exploratory phase. Once familiar with the data, you can move on to the [03 - Model Prediction](./03%20-%20Model%20Prediction/) folder, where the machine learning models are built and trained.
+To start exploring the project, you can begin by opening the notebooks in the [02 - Exploratory Data Analysis](./02-Exploratory%20Data%20Analysis/) folder for an initial overview of the data and the findings from the exploratory phase. Once familiar with the data, you can move on to the [03 - Model Prediction](./03-Model%20Prediction/) folder, where the machine learning models are built and trained.
 
 
 ## Environment Setup
