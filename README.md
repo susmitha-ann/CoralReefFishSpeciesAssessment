@@ -2,7 +2,7 @@
 A machine learning project to assess the diversity of coral reef fishes in relation to environmental factors.
 
 This project (created for a project for DSTI Master) aimed at predicting the diversity of fish species in coral reefs using various environmental data and machine learning models. The dataset used in this project was exported from the following research article:
-Coral reef fish species dataset on Dryad.
+[Coral reef fish species dataset on Dryad](https://datadryad.org/stash/dataset/doi:10.5061/dryad.xpnvx0kmn)
 
 Project Structure
 The project is divided into several folders, each containing a specific set of resources related to different phases of the project:
@@ -27,4 +27,5 @@ To replicate this project and execute the notebooks, ensure you have the proper 
 
 Citation
 If you use the data or any part of this project, please refer to the original dataset hosted on Dryad:
-Coral reef fish species dataset.
+[Coral reef fish species dataset on Dryad](https://datadryad.org/stash/dataset/doi:10.5061/dryad.xpnvx0kmn)
+
