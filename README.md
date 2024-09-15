@@ -24,7 +24,7 @@ To start exploring the project, you can begin by opening the notebooks in the [0
 
 
 ## Environment Setup
-To replicate this project and execute the notebooks, ensure you have the proper environment set up. The project was built using Python and Jupyter Notebooks, and the required packages can be restored using the [requirements.txt](./path/to/requirements.txt) file.
+To replicate this project and execute the notebooks, ensure you have the proper environment set up. The project was built using Python and Jupyter Notebooks, and the required packages can be restored using the [requirements.txt](./requirements.txt)file.
 
 ## Citation
 If you use the data or any part of this project, please refer to the original dataset hosted on Dryad:
