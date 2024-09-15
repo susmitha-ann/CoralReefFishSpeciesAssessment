@@ -23,7 +23,7 @@ Getting Started
 To start exploring the project, you can begin by opening the notebooks in the 02 - Exploratory Data Analysis folder for an initial overview of the data and the findings from the exploratory phase. Once familiar with the data, you can move on to the 03 - Model Prediction folder, where the machine learning models are built and trained.
 
 Environment Setup
-To replicate this project and execute the notebooks, ensure you have the proper environment set up. The project was built using Python and Jupyter Notebooks, and the required packages can be restored using the requirement.txt file.
+To replicate this project and execute the notebooks, ensure you have the proper environment set up. The project was built using Python and Jupyter Notebooks, and the required packages can be restored using the [requirements.txt](./path/to/requirements.txt) file.
 
 Citation
 If you use the data or any part of this project, please refer to the original dataset hosted on Dryad:
