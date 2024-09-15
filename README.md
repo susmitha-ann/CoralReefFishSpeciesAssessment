@@ -16,7 +16,7 @@ This folder contains Jupyter notebooks that were used to perform an exploratory 
 ## 03 - Model Prediction
 This folder contains Jupyter notebooks that outline the machine learning model-building process. The notebooks cover data preprocessing, feature engineering, model training, and evaluation. Various models are trained to predict fish diversity based on environmental factors.
 
-## 04 - Results
+## 04 - Result
 This folder contains image files that display the results of the machine learning predictions.
 
 ## Getting Started
