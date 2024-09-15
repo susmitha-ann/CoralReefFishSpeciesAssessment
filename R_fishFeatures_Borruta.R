@@ -5,25 +5,13 @@ library(tidyverse)
 library(dplyr)
 library(Boruta)
 
-#feature engeneering by sushmita + select at the end of the report from all
-data = read.csv("C:/Users/marie/Documents/DSTI_Cours/Python_Class/Python_Lab/Exam_project/Project 2/CoralReefFishSpeciesAssessment/df_ML.csv")
-
-#2nd dataset
+# dataset
 data = read.csv("C:/Users/marie/Documents/DSTI_Cours/Python_Class/Python_Lab/Exam_project/Project 2/CoralReefFishSpeciesAssessment/species_index_borruta.csv")
-
-#adding the cat column
-data$Diversity_cat = ifelse(
-  data$Diversity_index < 0.8, 'low',
-  ifelse((data$Diversity_index >= 0.8 & data$Diversity_index < 0.9), 'mean',
-         ifelse(data$Diversity_index >= 0.9, 'high', '0'))
-)
 
 
 data_borruta <- transform(data,
                           Region=as.factor(Region),
                           Habitat_type_classLV2=as.factor(Habitat_type_classLV2))
-
-borruta_output <- Boruta(Diversity_cat~., data= data_borruta, doTrace=2)
 
 borruta_output2 <- Boruta(Diversity_index~., data= data, doTrace=2)
 
@@ -44,7 +32,7 @@ k <- lapply(1:ncol(borruta_output2$ImpHistory), function(i)
 names(k) <- colnames(borruta_output2$ImpHistory)
 Labels <- sort(sapply(k,median))
 axis(side = 1, las=2, labels = names(Labels),
-     at = 1:ncol(borruta_output2$ImpHistory), cex.axis=0.7)
+     at = 1:ncol(borruta_output2$ImpHistory), cex.axis=0.5)
 
 ###############################################################################################################################################################################
 #Trait datasets with out traitement on the features
@@ -101,7 +89,7 @@ k <- lapply(1:ncol(borruta_output3$ImpHistory), function(i)
 names(k) <- colnames(borruta_output3$ImpHistory)
 Labels <- sort(sapply(k,median))
 axis(side = 1, las=2, labels = names(Labels),
-     at = 1:ncol(borruta_output3$ImpHistory), cex.axis=0.7)
+     at = 1:ncol(borruta_output3$ImpHistory), cex.axis=0.4)
 
 #Boruta analysis, the Relief is in this dataset the indice of fish diversity in function of the coral cover. By the authors its consider as the targets in this dataset with Coral
 borruta_output4 <- Boruta(Relief~., data= trait_borruta, doTrace=2)
@@ -113,7 +101,7 @@ k <- lapply(1:ncol(borruta_output4$ImpHistory), function(i)
 names(k) <- colnames(borruta_output4$ImpHistory)
 Labels <- sort(sapply(k,median))
 axis(side = 1, las=2, labels = names(Labels),
-     at = 1:ncol(borruta_output4$ImpHistory), cex.axis=0.7)
+     at = 1:ncol(borruta_output4$ImpHistory), cex.axis=0.5)
 
 
 
