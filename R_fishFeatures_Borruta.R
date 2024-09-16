@@ -13,7 +13,7 @@ data_borruta <- transform(data,
                           Region=as.factor(Region),
                           Habitat_type_classLV2=as.factor(Habitat_type_classLV2))
 
-borruta_output2 <- Boruta(Diversity_index~., data= data, doTrace=2)
+borruta_output2 <- Boruta(Diversity_index~., data= data_borruta, doTrace=2)
 
 print(borruta_output)
 plot(borruta_output, xlab = "", xaxt = "n")
