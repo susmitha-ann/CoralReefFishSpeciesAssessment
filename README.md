@@ -24,7 +24,7 @@ To start exploring the project, you can begin by opening the notebooks in the [0
 
 
 ## Environment Setup
-To replicate this project and execute the notebooks, ensure you have the proper environment set up. The project was built using Python and Jupyter Notebooks. You can restore the required packages using the requirement_conda.txt file for Conda packages.For additional packages not available via Conda, use the requirement_pip.txt file.
+To replicate this project and execute the notebooks, ensure you have the proper environment set up. The project was built using Python and Jupyter Notebooks. You can restore the required packages using the [requirement_conda.txt](./CoralReefFishSpeciesAssessment/requirement_conda.txt) file for Conda packages. For additional packages not available via Conda, use the [requirement_pip.txt](./CoralReefFishSpeciesAssessment/requirement_pip.txt)file.
 
 ## Citation
 If you use the data or any part of this project, please refer to the original dataset hosted on Dryad:
