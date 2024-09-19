@@ -14,7 +14,7 @@ This folder contains the CSV files with the datasets used for this project.
 This folder contains Jupyter notebooks that were used to perform an exploratory analysis of the datasets. These notebooks examine the relationships between different variables, visualize the data, and prepare it for the model training phase.
 
 ## 03 - Model Prediction
-This folder contains Jupyter notebooks that outline the machine learning model-building process. The notebooks cover data preprocessing, feature engineering, model training, and evaluation. Various models are trained to predict fish diversity based on environmental factors. For [02-Model_2.ipynb](./CoralReefFishSpeciesAssessment/03-Model%20Prediction/02-Model_2.ipynb), as the dataset is large, it requires significant storage and time to run, therefore it would be preferable to use a virtual environment for that purpose. 
+This folder contains Jupyter notebooks that outline the machine learning model-building process. The notebooks cover data preprocessing, feature engineering, model training, and evaluation. Various models are trained to predict fish diversity based on environmental factors. For [02-Model_2.ipynb](/03-Model%20Prediction/02-Model_2.ipynb), as the dataset is large, it requires significant storage and time to run, therefore it would be preferable to use a virtual environment for that purpose. 
 
 ## 04 - Results
 This folder contains image files that display the results of the machine learning predictions.
