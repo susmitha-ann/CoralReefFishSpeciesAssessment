@@ -8,7 +8,7 @@ This project (created for a project for DSTI Master) aimed at predicting the div
 The project is divided into several folders, each containing a specific set of resources related to different phases of the project:
 
 ## 01 - Data
-This folder contains the CSV files with the datasets used for this project.
+This folder contains the CSV files with the datasets used for this project. For the files: SpecSiteList.csv and Species_diversity.csv the size is to important to be download directly with the other datasets when the project is doawload in a zip file. It that case to use them it's needed to go on the data folder and download each file individualy.
 
 ## 02 - Exploratory Data Analysis
 This folder contains Jupyter notebooks that were used to perform an exploratory analysis of the datasets. These notebooks examine the relationships between different variables, visualize the data, and prepare it for the model training phase.
